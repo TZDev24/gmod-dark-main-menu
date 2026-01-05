@@ -26,17 +26,20 @@ INPUT.searchbox, INPUT.gm_search
 	margin-top: 6px;
 	padding: 4px;
 }
+
 INPUT.searchbox
 {
 	float: right;
 	margin-right: 320px;
 	width: 15%;
 }
+
 INPUT.gm_search
 {
 	width: 100%;
 	margin-bottom: 5px;
 }
+
 INPUT[type="text"], INPUT[type="number"]
 {
 	border: 1px solid #ABADB3;
