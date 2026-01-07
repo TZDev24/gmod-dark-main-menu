@@ -13,14 +13,14 @@
 {
 	margin-right: 5px;
 	margin-bottom: 5px;
-	background-color: #efefef;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 5px 20px;
 	border-radius: 3px;
 	cursor: pointer;
 	position: relative;
 	height: 34px;
 	overflow: hidden;
-	background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 1%, rgb(240,240,240) 99%);
+	background-image: -webkit-linear-gradient(bottom, rgba(32,32,32, 0.5) 1%, rgba(0,0,0, 0.5) 99%);
 }
 
 .gamemode:hover
@@ -30,6 +30,7 @@
 
 .gamemode .name
 {
+	color: white;
 	font-weight: bold;
 	position: absolute;
 	left: 40px;
@@ -57,7 +58,7 @@
 {
 	text-align: right;
 	font-size: 11px;
-	color: #555;
+	color: white;
 	position: absolute;
 	bottom: 3px;
 	left: 43px;
@@ -97,7 +98,7 @@ H1 small
 {
 	-webkit-box-flex: 1;
 	position: relative;
-	background-color: white;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -134,11 +135,13 @@ H1 small
 	margin-right: 3px;
 	-webkit-box-flex: 1;
 	line-height: 17px;
+	/* color: white; */
 }
 
 .serverlist name span
 {
 	vertical-align: top;
+	color: white;
 }
 
 .serverlist name tag
@@ -183,6 +186,7 @@ H1 small
 {
 	width: 90px;
 	text-align: left;
+	color: white;
 }
 
 .serverlist players
@@ -193,6 +197,7 @@ H1 small
 .serverlist ping
 {
 	width: 32px;
+	color: white;
 }
 
 .serverlist rank
@@ -230,7 +235,7 @@ H1 small
 .serverlist .server
 {
 	height: 16px;
-	background-color: #E7F0FF;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 3px 4px;
 	color: #444;
 	cursor: pointer;
@@ -242,7 +247,7 @@ H1 small
 
 .serverlist .server:nth-child(odd)
 {
-	background-color: #F1F6FF;
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 .serverlist .empty
@@ -252,17 +257,17 @@ H1 small
 
 .serverlist .missingmap map
 {
-	color: #955;
+	color: rgb(255, 0, 0);
 }
 
 .serverlist .empty players
 {
-	color: #daa;
+	color: rgb(255, 0, 0);
 }
 
 .serverlist .server:hover
 {
-	background-color: #B7DDFD;
+	background-color: rgba(0, 128, 255, 0.5);
 }
 
 .serverlist .header
@@ -373,7 +378,7 @@ A.bglink img
 .serverinfo
 {
 	width: 280px;
-	background-color: white;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px 15px;
 	border-radius: 4px;
 	margin-left: 10px;
@@ -429,7 +434,7 @@ A.bglink img
 .serverinfo subinfo
 {
 	display: block;
-	color: #444;
+	color: white;
 }
 
 .serverinfo > div
@@ -443,19 +448,21 @@ A.bglink img
 .serverinfo div.cell
 {
 	display: table-cell;
+	color: white;
 }
 
 .serverinfo header
 {
 	display: table-row;
 	height: 0;
+	color: white;
 }
 
 .serverinfo players
 {
 	display: block;
 	height: 100%;
-	background-color: #EEE;
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 4px;
 	overflow: auto;
 }
@@ -464,6 +471,7 @@ A.bglink img
 {
 	max-width: 170px;
 	overflow: hidden;
+	color: white;
 }
 
 @media screen and (max-width: 900px)
@@ -490,7 +498,7 @@ A.bglink img
 
 .activeserver
 {
-	background-color: #FFA !important;
+	background-color: rgba(0, 128, 255, 1) !important;
 }
 
 DIV.installgamemode
@@ -538,13 +546,14 @@ SPAN.installgamemode:hover
 
 .server_gamemodes
 {
-	border: 5px solid white;
+	border: 5px solid rgba(0, 0, 0, 0.5);
 
 	position: absolute;
 	top: 64px;
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .server_gamemodes_inner
@@ -554,6 +563,7 @@ SPAN.installgamemode:hover
 	top: 0px;
 	bottom: 0px;
 	right: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .add_fav_server
