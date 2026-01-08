@@ -32,7 +32,7 @@
 {
 	display: inline-block;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 4px;
 	height: 40px;
 	padding-left: 35px;
@@ -51,7 +51,8 @@
 
 #NavBar .button:hover
 {
-	box-shadow: 0px 0px 20px #fff;
+	background-color: rgb(0, 144, 255);
+	box-shadow: 0px 0px 20px rgb(0, 144, 255);
 }
 
 #NavBar .smallicon
@@ -84,7 +85,7 @@
 
 #NavBar .button SPAN, UL.gamemode_list LI SPAN, UL.language_list LI SPAN
 {
-	color: #333;
+	color: white;
 	position: relative;
 	top: 13px;
 	padding-left: 10px;
@@ -127,12 +128,12 @@
 
 #NavBar number.severity1
 {
-	background: #ffc800;
+	background: rgb(255, 128, 0);
 }
 
 #NavBar number.severity2
 {
-	background: #ff4000;
+	background: rgb(255, 0, 0);
 	color: white;
 }
 
@@ -143,7 +144,7 @@ UL.games_list
 	overflow: auto;
 	max-height: 300px;
 	padding: 0;
-	border: 3px solid #333;
+	border: 3px solid rgba(0, 0, 0, 0.5);
 }
 
 ul.games_list .popup .open
@@ -214,7 +215,7 @@ UL.gamemode_list
 {
 	overflow: auto;
 	max-height: 80%;
-	border: 3px solid #333;
+	border: 3px solid rgba(0, 0, 0, 0.5);
 }
 
 UL.gamemode_list LI
@@ -222,13 +223,15 @@ UL.gamemode_list LI
 	display: inherit;
 	margin: 3px;
 	border-radius: 0;
-	background-color: #eee;
+	background-color: rgba(0, 0, 0, 0.5);
 	margin: 0 0 2px 0;
 }
 
 UL.gamemode_list LI:hover
 {
-	background-color: #fff;
+	background-color: rgb(0, 144, 255);
+	box-shadow: 0px 0px  20px rgb(0, 144, 255);
+
 }
 
 UL.gamemode_list LI:first-child
@@ -245,9 +248,9 @@ UL.gamemode_list LI:last-child
 UL.language_list
 {
 	right: 100px;
-	background-color: #eee;
+	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
-	border: 3px solid #333;
+	border: 3px solid rgba(0, 0, 0, 0.5);
 	padding-bottom: 4px;
 }
 
@@ -262,12 +265,13 @@ UL.language_list LI
 
 UL.language_list LI IMG
 {
-	border: 1px solid #888;
+	/* border: 1px solid #888; */
 }
 
 UL.language_list LI:hover
 {
-	background-color: #fff;
+	background-color: rgb(0, 144, 255);
+	box-shadow: 0px 0px 20px rgb(0, 144, 255);
 }
 
 ::-webkit-scrollbar
