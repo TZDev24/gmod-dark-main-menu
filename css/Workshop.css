@@ -351,6 +351,8 @@ controls control.disabled
 .create_preset
 {
 	min-width: 350px;
+	background-color: rgba(32, 32, 32);
+	color: white;
 }
 
 .preset_content
@@ -377,7 +379,8 @@ controls control.disabled
 }
 .preset_list
 {
-	background: #eee;
+	background: #333;
+	color: white;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	-webkit-box-flex: 1;
@@ -486,21 +489,21 @@ workshopicon.disabled name, workshopicon.disabled author, workshopicon.disabled 
 
 workshopicon.invalid
 {
-	border-color: #d22;
+	border-color: rgba(255, 0, 0, 0.5);
 }
 workshopicon.invalid name, workshopicon.invalid author, workshopicon.invalid votes, workshopicon.invalid size
 {
-	background: #d22;
+	background: rgba(255, 0, 0, 0.5);
 	color: #fff;
 }
 
 workshopicon.invalid.disabled
 {
-	border-color: #922;
+	border-color: rgba(255, 0, 0, 0.5);
 }
 workshopicon.invalid.disabled name, workshopicon.invalid.disabled author, workshopicon.invalid.disabled votes, workshopicon.invalid.disabled size
 {
-	background: #922;
+	background: rgba(255, 0, 0, 0.5);
 	color: #fff;
 }
 

@@ -34,7 +34,7 @@ BODY
 	border-radius: 3px;
 	text-align: left;
 	padding: 1px;
-	background-color: rgba( 0, 0, 0, 0.6 );
+	background-color: rgba( 0, 0, 0, 1 );
 	float: right;
 }
 
@@ -56,13 +56,14 @@ BODY
 	text-align: right;
 	font-size: 12px;
 	font-family: helvetica;
-	color: rgba( 0, 0, 0, 0.4);
+	color: rgba( 0, 0, 0, 1);
 	letter-spacing: -1px;
 	text-shadow: 0px 0px 3px white;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
+/*
 @-webkit-keyframes walk
 {
 	0%
@@ -80,17 +81,18 @@ BODY
 {
 	-webkit-animation: walk 10s linear infinite;
 	text-align: center;
-	background-color: #fe7;
+	background-color: rgb(0, 0, 0);
 	width: 24px;
 	height: 24px;
-	color: #999;
+	color: white;
 	font-size: 16px;
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	border-radius: 3px;
 	display: inline-block;
-	border: 2px solid #999;
+	border: 2px solid black;
 }
+*/
 
 #spambox
 {
@@ -101,24 +103,28 @@ BODY
 
 #background
 {
-	background-image: url( 'img/bg.png' );
+	/* background-image: url( 'img/bg.png' ); */
+	background-color: rgb(16, 16, 16);
 	background-size: 100% 100%;
 	height: 100%;
 }
+
 body.dark #background
 {
 	background-image: url( 'img/bg_dark.png' );
 }
+
 body.dark
 {
-	color: #fff;
+	color: #555;
 }
 
 .server_info
 {
+	color: white;
 	display: inline-block;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background-image: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0.4 ) 0%, rgba( 0, 0, 0, 0.03 ) 75%, rgba( 0, 0, 0, 0 ) 100% );
+	/* background-image: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0.4 ) 0%, rgba( 0, 0, 0, 0.03 ) 75%, rgba( 0, 0, 0, 0 ) 100% ); */
 	padding: 20px;
 	padding-right: 180px;
 	visibility: hidden;
@@ -126,10 +132,12 @@ body.dark
 	max-width: 100%;
 	box-sizing: border-box;
 }
+
 .server_info.visible
 {
 	visibility: visible;
 }
+
 .server_info .text
 {
 	display: inline-block;
@@ -139,16 +147,18 @@ body.dark
 	line-height: 42px;
 	font-size: xx-large;
 }
+
 .server_info .text > div
 {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
+
 .server_info #mapimg
 {
 	width: 128px;
 	height: 128px;
-	background: #666;
+	background: #222;
 	margin-right: 16px;
 	float: left;
 }
