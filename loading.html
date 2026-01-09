@@ -5,14 +5,9 @@
 	</head>
 	<body>
 
+	
 		<div id="background">
 			<div id="container">
-
-				<img id="logo" src='img/gmod_logo_brave.png'/>
-				
-				<div>
-					<div class="walk">:v</div>
-				</div>
 
 			</div>
 
@@ -31,21 +26,6 @@
 		</div>
 
 		<script type="text/javascript">
-			document.addEventListener( "DOMContentLoaded", function() {
-				var today = new Date();
-
-				// Force it to dark on Spooktober or when it's late
-				var isHalloween = today.getMonth() == 9 && today.getDate() >= 15 || today.getMonth() == 10 && today.getDate() <= 5;
-				var darkMode = today.getHours() >= 19 || today.getHours() <= 7;
-
-				var isSupportsSystemDarkMode = navigator.userAgent.match(/Chrome\/(\d+)/)[1] >= 76;
-				var systemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-				if ( isHalloween || ( isSupportsSystemDarkMode ? systemDarkMode : darkMode ) )
-				{
-					document.body.classList.add( "dark" );
-				}
-			} );
 
 			function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, lang, gamemodeNice )
 			{

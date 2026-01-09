@@ -100,46 +100,5 @@
 
 </ul>
 
-<ul class="kinect_settings popup">
-
-	<li>
-		<div>
-
-			<p>
-				<label style="display: block">
-					<input type="checkbox" ng-model="kinect.show_color" ng-change="kinect.update()">  <span ng-Tranny="'motionsensor.showcolor'"></span>
-				</label>
-			</p>
-
-
-			<div ng-show="kinect.show_color">
-
-				<span ng-Tranny="'motionsensor.colorpos'"></span>
-
-				<p style="margin-left: 5px;">
-					<label ng-repeat="option in kinect.color_options" style="display: block">
-						<input type="radio" name="kinect.color" ng-model="kinect.color" value="{{option}}" ng-change="kinect.update()">
-						<span ng-Tranny="'motionsensor.showcolor.'+ option"></span>
-					</label>
-				</p>
-			</div>
-
-			<div  ng-show="kinect.show_color">
-				<span ng-Tranny="'motionsensor.colorsize'"></span>
-
-				<p style="margin-left: 5px;">
-					<label ng-repeat="option in kinect.size_options" style="display: block">
-						<input type="radio" name="kinect.color_size" ng-model="kinect.color_size" value="{{option}}" ng-change="kinect.update()">
-						<span ng-Tranny="'motionsensor.colorsize.'+ option"></span>
-					</label>
-				</p>
-			</div>
-
-		</div>
-
-	</li>
-
-</ul>
-
 </body>
 </html>

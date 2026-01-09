@@ -63,37 +63,6 @@ BODY
 	white-space: nowrap;
 }
 
-/*
-@-webkit-keyframes walk
-{
-	0%
-	{
-		-webkit-transform: rotateZ(0deg);
-	}
-
-	100%
-	{
-		-webkit-transform: rotateZ(360deg);
-	}
-}
-
-.walk
-{
-	-webkit-animation: walk 10s linear infinite;
-	text-align: center;
-	background-color: rgb(0, 0, 0);
-	width: 24px;
-	height: 24px;
-	color: white;
-	font-size: 16px;
-	font-family: arial, sans-serif;
-	font-weight: bold;
-	border-radius: 3px;
-	display: inline-block;
-	border: 2px solid black;
-}
-*/
-
 #spambox
 {
 	float: right;
